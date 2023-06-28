@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+  </head>
+
+  <body>
+    <web-app
+      string-prop="Click Me!"
+      num-prop="360"
+      float-prop="0.5"
+      true-prop="true"
+      false-prop="false"
+      array-prop='[true, 100.25, "👽", { "aliens": "welcome" }]'
+      obj-prop='{ "very": "object", "such": "wow!" }'
+      func-prop="sayHello"
+    >
+    </web-app>
+
+    <script>
+      function sayHello(name) {
+        alert(`Hello, ${name}!`)
+      }
+    </script>
+  </body>
+</html>
