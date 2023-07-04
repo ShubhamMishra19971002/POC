@@ -1,5 +1,5 @@
-import { FC } from "react"
-
+import { FC, useEffect } from "react"
+import { appStyle } from "./app.style"
 type AppProps = {
   stringProp: string
   numProp: number
@@ -21,6 +21,7 @@ const App: FC<AppProps> = ({
   objProp,
   funcProp,
 }) => {
+
   console.log({
     stringProp,
     numProp,
@@ -32,7 +33,24 @@ const App: FC<AppProps> = ({
     funcProp,
   })
 
-  return <button onClick={() => funcProp("world")}>{stringProp}</button>
+  useEffect(() => {
+    console.log(document.querySelector('div.root-1'))
+    const appElement:any=document.getElementById('app')
+    const styleElement=document.createElement('style')
+    styleElement.textContent=appStyle
+    if(document.querySelector('div.root-1')){
+      document.querySelector('div.app')?.attachShadow({ mode: 'open' })?.appendChild(appElement).appendChild(styleElement)
+    }
+  }, [])
+
+  return (
+    <div className="root-1">
+      <div id="app">
+        <button onClick={() => funcProp("world1")}>{stringProp}</button>
+        <p className="style">uagsyuagsu</p>
+      </div>
+    </div>
+  )
 }
 
 export default App
