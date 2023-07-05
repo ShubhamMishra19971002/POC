@@ -1,6 +1,5 @@
 export const appStyle=`
-.style{
+.style {
   background-color: red;
 }
-
 `

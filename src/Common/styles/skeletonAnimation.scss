@@ -1,0 +1,81 @@
+.skeleton-anm-box {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #efefef;
+    border-radius: 4px;
+  }
+  // .skeleton-img {
+  //   position: relative;
+  //   min-width: 60px;
+  //   height: 60px;
+  //   background: #efefef;
+  //   border-radius: 50%;
+  //   overflow: hidden;
+  // }
+  .skeleton-img {
+    position: relative;
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    background: #efefef;
+    border-radius: 50%;
+    overflow: hidden;
+  }  
+  
+  .skeleton-heading {
+    position: relative;
+    display: block;
+    background: #efefef;
+    border-radius: 4px;
+    overflow: hidden;
+    width:100%;
+    height:1.5rem;
+  }
+  .skeleton-text {
+    position: relative;
+    display: block;
+    background: #efefef;
+    border-radius: 4px;
+    overflow: hidden;
+    width:100%;
+    height:1rem;
+  }
+  .skeleton-label {
+    position: relative;
+    display: block;
+    background: #efefef;
+    border-radius: 4px;
+    overflow: hidden;
+    width:50%;
+    height:.6rem;
+    opacity: 0.8;
+  }
+  
+  .skeleton-anm::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      #efefef 0%,
+      #dfdfdf 20%,
+      #efefef 40%,
+      #efefef 100%
+    );
+    background-size: 450px 400px;
+    background-repeat: no-repeat;
+    animation: shimmer 1.4s linear infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -450px 0px;
+    }
+    100% {
+      background-position: 450px 0px;
+    }
+  }
+  
+
+ 

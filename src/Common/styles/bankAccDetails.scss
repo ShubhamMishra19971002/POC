@@ -1,0 +1,66 @@
+@import './variables.module.scss';
+
+.profile-bank-details{
+  & h3{
+    font-size: $size_mdl;
+    line-height: $size_lg;
+  }
+  & .bank-acc-cards{
+    border-radius: 4px!important;
+    position: relative;
+    & .acc--type{
+      background-color: $gray100;
+      color: $primaryBgColor;
+      font-size: $size_sm;
+      font-weight: normal;
+      line-height: $size_mdl;
+      border: 1px solid $gray100;
+      border-radius: 4px;
+      border-top-left-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: $size_3xs $size_sm;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: auto;
+    }
+    & h6{
+      font-size: $size;
+      line-height: $size_mdl;
+    }
+    & p{
+      font-size: $size_sm;
+      font-weight: normal;
+      line-height: $size_mdl;
+    }
+    & .bank-acc-viewBtn{
+      & svg{
+        vertical-align: middle;
+      }
+    }
+  }
+  & .add-bank-content{
+    font-size: $size_sm;
+    line-height: $size_lg;
+    color: $primaryBgColor;
+  }
+  & .add-bank-acc{
+    border: 2px dashed $inactive_light;
+    background-color: $tertiaryBgColor;
+    border-radius: 4px;
+    & .btn{
+      border-radius: 50%;
+      padding: $size_xs $size_sm;
+      height: 44px;
+      & svg{
+        vertical-align: middle;
+        min-width: 18px;
+        height: auto;
+      }
+    }
+    & h6{
+      font-size: $size;
+      color: $primaryBgColor;
+    }
+  }
+}

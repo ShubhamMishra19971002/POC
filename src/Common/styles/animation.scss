@@ -1,0 +1,80 @@
+@import './variables.module.scss';
+
+@keyframes moveAround1{
+  0%{
+    top: -130px;
+  }
+  10%{
+    top: -133px;
+  }
+  20%{
+    top: -136px;
+  }
+  30%{
+    top: -139px;
+  }
+  40%{
+    top: -142px;
+  }
+  50%{
+    top: -145px;
+  }
+  60%{
+    top: -142px;
+  }
+  70%{
+    top: -139px;
+  }
+  80%{
+    top: -136px;
+  }
+  90%{
+    top: -133px;
+  }
+  100%{
+    top: -130px;
+  }
+}
+
+@keyframes moveAround2{
+  0%{
+    bottom: -100px;
+  }
+  10%{
+    bottom: -102px;
+  }
+  20%{
+    bottom: -104px;
+  }
+  30%{
+    bottom: -106px;
+  }
+  40%{
+    bottom: -108px;
+  }
+  50%{
+    bottom: -110px;
+  }
+  60%{
+    bottom: -108px;
+  }
+  70%{
+    bottom: -106px;
+  }
+  80%{
+    bottom: -104px;
+  }
+  90%{
+    bottom: -102px;
+  }
+  100%{
+    bottom: -100px;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+

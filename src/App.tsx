@@ -35,11 +35,12 @@ const App: FC<AppProps> = ({
 
   useEffect(() => {
     console.log(document.querySelector('div.root-1'))
-    const appElement:any=document.getElementById('app')
+    
     const styleElement=document.createElement('style')
-    styleElement.textContent=appStyle
+    styleElement.innerHTML=appStyle
+    const appElement:any=document.getElementById('app')
     if(document.querySelector('div.root-1')){
-      document.querySelector('div.app')?.attachShadow({ mode: 'open' })?.appendChild(appElement).appendChild(styleElement)
+      document.querySelector('div.root-1')?.attachShadow({ mode: 'open' })?.appendChild(appElement)?.appendChild(styleElement)
     }
   }, [])
 

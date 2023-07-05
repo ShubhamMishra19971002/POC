@@ -1,0 +1,76 @@
+@import './variables.module.scss';
+
+.claim_card {
+  color: $primaryTextColor;
+  border: 1px solid rgba($primarySubTextColor, .5);
+  border-radius:$size_3xl!important;
+  // max-width:400px;
+  // margin: 0 auto;
+}
+
+.card_header {
+  display: flex;
+  margin-bottom:0 !important;
+  padding-bottom:0 !important;
+  border-bottom: none!important;
+  gap: $size_lg !important;
+}
+
+.card_text {
+  width: 100%;
+
+  & h1 {
+    margin-bottom: $size_3xs;
+    font-size:$size_lg;
+    font-weight:$fw_sb;
+  }
+
+  & p {
+    color: $gray400;
+    margin-bottom: $size_xs;
+    font-size:$size_sm;
+    font-weight:$fw;
+    line-height: $size_lg;
+    & span{
+      color: $gray600;
+      font-size: 10px;
+    }
+  }
+}
+
+.card_body {
+  margin-top: 0!important;
+  color: $primaryTextColor;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progressIcon {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  line-height: 0;
+}
+
+.hospital_icon {
+  position: absolute;
+  top:0;
+  z-index:1;
+}
+.radial_progress {
+  position: absolute;
+  top:0;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.radial_progress svg {
+  position: absolute;
+  width:50px;
+  height:50px;
+}
+
+.card_desc {
+  color: $primary;
+}

@@ -1,0 +1,64 @@
+@import './variables.module.scss';
+
+.claim_timeline {
+  padding-bottom: 1.5rem;
+  position: relative;
+  padding-left: $size_sm;
+  margin-left: $size_xs;
+  & > small {
+    color: $gray600;
+  }
+  &.active > small {
+    color: $primaryBgColor;
+  }
+  &:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid $active;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px;
+    top: 6px;
+    z-index: 1;
+  }
+  &:after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: $active;
+    position: absolute;
+    left: -3px;
+    top: 9px;
+  }
+  &.disabled:after {
+    background: $gray600;
+  }
+  &.disabled:before {
+    background: #fff;
+    border: 2px solid $gray600;
+  }
+  &.active:before {
+    background: $active;
+  }
+  &:last-child:after {
+    display: none;
+  }
+  .card {
+    background: rgba($active, 0.125);
+    border-radius: $size_2xs;
+    padding: $size_sm;
+    &.active{
+      background: $active;
+    }
+  }
+
+  .pending_title {
+    background: rgba($active, 0.125);
+    color: $primaryBgColor;
+    padding: 1px 4px;
+    border-radius: 4px;
+    display: block;
+  }
+}

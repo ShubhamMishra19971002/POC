@@ -1,0 +1,101 @@
+@import '../../common/styles/variables.module.scss';
+
+.login-validate-header{
+  & .fill-black{
+    fill: #000;
+  }
+  & h6{
+    font-size: $size;
+    font-weight: $fw_sb;
+    line-height: $size_mdl;
+    & small{
+      font-weight: normal;
+      font-size: 10px;
+      color: $gray700;
+    }
+  }
+}
+
+.login-validate{
+  & .validate-capsule{
+    overflow-y: auto;
+    margin-bottom: $size_xl;
+    margin-left: -$size_xl;
+    margin-right: -$size_xl;
+    & .btn{
+      padding: 12px 8px;
+      background-color: #fff;
+      color: $gray600;
+      font-size: 12px;
+      font-weight: $fw_sb;
+      min-width: 110px;
+      width: 100%;
+      height: auto;
+      -webkit-tap-highlight-color: transparent;
+      &:first-child{
+        margin-left: $size_xl;
+      }
+      &:last-child{
+        margin-right: $size_xl;
+      }
+      & .fill-gray{
+        fill: $gray600;
+      }
+      &.login-validate-active{
+        background-color: $active;
+        border-color: $active;
+        color: #fff;
+        & .fill-gray{
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  & .validate-member{
+    margin-bottom: $size_xl;
+    & h3{
+      font-size: $size_mdl;
+      font-weight: $fw_b;
+    }
+  }
+}
+
+.login-update{
+  & .login-credentials{
+    padding-bottom: $size_sm;
+    border-bottom: 1px solid $gray300;
+    & p{
+      line-height: $size_lg;
+      font-weight: $fw_sb;
+      & small{
+        font-weight: normal;
+        color: $gray700;
+      }
+    }
+  }
+  & .update-credentials{
+    & h3{
+      font-size: $size_mdl;
+      font-weight: $fw_b;
+      line-height: $size_mdl;
+      & small{
+        color: $gray600;
+        font-weight: normal;
+        font-size: 10px;
+      }
+    }
+    & .otp-flex-btn{
+      margin-top: 1.65rem;
+      & .fill-black{
+        fill: #000;
+      }
+    }
+    & .update-resend-otp{
+      margin-top: $size;
+      & .otp-input-wrap{
+        margin-top: -2.7rem;
+      }
+    }
+  }
+}

@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.js": "/static/js/main.114670e7.js",
-    "index.html": "/index.html",
-    "main.114670e7.js.map": "/static/js/main.114670e7.js.map"
+    "main.js": "/policy-linking.min.js",
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/js/main.114670e7.js"
+    "policy-linking.min.js"
   ]
 }
